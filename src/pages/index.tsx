@@ -1,24 +1,34 @@
-import { Title } from 'solid-meta';
-
 function Home() {
   return (
-    <div>
-      <Title>Home</Title>
-      <header class="bg-[#282c34] min-h-screen flex flex-col items-center justify-center text-2xl text-white">
-        <img src="/logo.svg" class="h-40vmin animate-[20s_spin] mb-8" alt="logo" />
-        <p>
-          <span>Edit </span>
-          <code>src/App.tsx</code>
-          <span> and save to reload.</span>
-        </p>
-        <Link
-          class="text-[#b318f0]"
-          href="/about"
-        >
-          About
-        </Link>
-      </header>
-    </div>
+    <main class="grid place-content-center min-h-screen bg-[#F2E9E2]">
+      <article class="flex sm:h-140 w-180 max-(w-90vw h-90vh sm:flex-col) rounded-xl overflow-hidden font-mono text-[#747685] bg-white">
+        <img class="flex-1 max-sm:h-1/2 sm:w-0" src="/image-product-desktop.jpg" alt="product" />
+        <div class="flex flex-col p-8 gap-2 sm:gap-8 flex-1">
+          <h2 class="text-xl uppercase">
+            perfume
+          </h2>
+          <h1 class="font-fraunces text-3xl sm:text-4xl text-black">
+            Gabrielle Essence Eau De Parfum
+          </h1>
+          <p class="text-sm flex-1">
+            A floral, solar and voluptuous interpretation composed by Olivier Polge,
+            Perfumer-Creator for the House of CHANEL.
+          </p>
+          <div class="flex gap-6 items-center">
+            <h3 class="font-fraunces text-[#43826A] text-4xl">
+              $149.99
+            </h3>
+            <p>
+              <s>$169.99</s>
+            </p>
+          </div>
+          <button type="button" class="rounded-lg w-full bg-[#43826A] hover:bg-[#1A4031] transition-colors text-white py-4 font-bold">
+            <i class="i-custom-cart m-(t1 r3)" />
+            Add to Cart
+          </button>
+        </div>
+      </article>
+    </main>
   );
 }
 
