@@ -1,8 +1,10 @@
+import image from '~/assets/images/image-product-desktop.jpg';
+
 function Home() {
   return (
     <main class="grid place-content-center min-h-screen bg-[#F2E9E2]">
       <article class="flex sm:h-140 w-180 max-(w-90vw h-90vh sm:flex-col) rounded-xl overflow-hidden font-mono text-[#747685] bg-white">
-        <img class="flex-1 max-sm:h-1/2 sm:w-0" src="/image-product-desktop.jpg" alt="product" />
+        <img class="flex-1 max-sm:h-1/2 sm:w-0" src={image} alt="product" />
         <div class="flex flex-col p-8 gap-2 sm:gap-8 flex-1">
           <h2 class="text-xl uppercase">
             perfume
