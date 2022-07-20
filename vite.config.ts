@@ -6,6 +6,7 @@ import autoImport from 'unplugin-auto-import/vite';
 import Inspect from 'vite-plugin-inspect';
 
 export default defineConfig({
+  base: '/FM__product-preview-card-component/',
   ssr: {
     noExternal: ['solid-app-router', 'solid-js/web'],
   },
